@@ -44,20 +44,20 @@ export function UserNav() {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <Link href="/profile">
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-          </Link>
-          <Link href="/connections">
-            <DropdownMenuItem>Connections</DropdownMenuItem>
-          </Link>
-          <Link href="/settings">
-            <DropdownMenuItem>Settings</DropdownMenuItem>
-          </Link>
+          <DropdownMenuItem asChild>
+            <Link href="/profile">Profile</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="/connections">Connections</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="/settings">Settings</Link>
+          </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <Link href="/login">
-            <DropdownMenuItem>Log out</DropdownMenuItem>
-        </Link>
+        <DropdownMenuItem asChild>
+            <Link href="/login">Log out</Link>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

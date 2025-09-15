@@ -61,15 +61,16 @@ export default function SidebarNav() {
         <SidebarMenu>
           {links.map((link) => (
             <SidebarMenuItem key={link.href}>
-              <Link href={link.href} passHref legacyBehavior>
-                <SidebarMenuButton
-                  isActive={pathname.startsWith(link.href)}
-                  tooltip={link.label}
-                >
+              <SidebarMenuButton
+                asChild
+                isActive={pathname.startsWith(link.href)}
+                tooltip={link.label}
+              >
+                <Link href={link.href}>
                   <link.icon />
                   <span>{link.label}</span>
-                </SidebarMenuButton>
-              </Link>
+                </Link>
+              </SidebarMenuButton>
             </SidebarMenuItem>
           ))}
         </SidebarMenu>
@@ -78,15 +79,16 @@ export default function SidebarNav() {
         <Separator className="my-2" />
         <SidebarMenu>
           <SidebarMenuItem>
-            <Link href="/settings" passHref legacyBehavior>
-              <SidebarMenuButton
-                isActive={pathname.startsWith('/settings')}
-                tooltip="Settings"
-              >
+            <SidebarMenuButton
+              asChild
+              isActive={pathname.startsWith('/settings')}
+              tooltip="Settings"
+            >
+              <Link href="/settings">
                 <Settings />
                 <span>Settings</span>
-              </SidebarMenuButton>
-            </Link>
+              </Link>
+            </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarFooter>
