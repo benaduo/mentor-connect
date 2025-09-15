@@ -17,16 +17,22 @@ import { Button } from '../ui/button';
 export function AppShell({ children }: { children: React.ReactNode }) {
   const isMobile = useIsMobile();
   // Using a cookie to store the sidebar state
-  const [open, setOpen] = React.useState(
-    typeof document !== 'undefined'
-      ? document.cookie.includes('sidebar_state=true')
-      : true
-  );
+  const [open, setOpen] = React.useState(true);
+
+  React.useEffect(() => {
+    const sidebarState = document.cookie.includes('sidebar_state=true');
+    setOpen(sidebarState);
+  }, []);
+
+  const handleOpenChange = (isOpen: boolean) => {
+    setOpen(isOpen);
+    document.cookie = `sidebar_state=${isOpen}; path=/; max-age=604800`;
+  };
 
   return (
     <SidebarProvider
       open={open}
-      onOpenChange={setOpen}
+      onOpenChange={handleOpenChange}
       defaultOpen={true}
     >
       <Sidebar>
