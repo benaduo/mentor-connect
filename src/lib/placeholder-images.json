@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "user-1",
+      "description": "Professional headshot of a smiling woman with dark hair.",
+      "imageUrl": "https://picsum.photos/seed/user1/200/200",
+      "imageHint": "woman professional"
+    },
+    {
+      "id": "user-2",
+      "description": "Headshot of a man with glasses in a casual setting.",
+      "imageUrl": "https://picsum.photos/seed/user2/200/200",
+      "imageHint": "man casual"
+    },
+    {
+      "id": "user-3",
+      "description": "Profile picture of a person with short hair, smiling warmly.",
+      "imageUrl": "https://picsum.photos/seed/user3/200/200",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "user-4",
+      "description": "A man in a suit looking thoughtfully to the side.",
+      "imageUrl": "https://picsum.photos/seed/user4/200/200",
+      "imageHint": "man corporate"
+    },
+    {
+      "id": "user-5",
+      "description": "A woman with blonde hair in an outdoor setting.",
+      "imageUrl": "https://picsum.photos/seed/user5/200/200",
+      "imageHint": "woman outdoor"
+    },
+    {
+      "id": "user-6",
+      "description": "A young professional man in a creative office space.",
+      "imageUrl": "https://picsum.photos/seed/user6/200/200",
+      "imageHint": "man office"
+    },
+    {
+      "id": "user-7",
+      "description": "A smiling woman with curly hair.",
+      "imageUrl": "https://picsum.photos/seed/user7/200/200",
+      "imageHint": "woman curly hair"
+    },
+    {
+      "id": "user-8",
+      "description": "A mature, experienced-looking man with a beard.",
+      "imageUrl": "https://picsum.photos/seed/user8/200/200",
+      "imageHint": "man beard"
+    }
+  ]
 }
