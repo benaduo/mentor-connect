@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -73,10 +75,7 @@ export default function LoginPage() {
                 <GoogleIcon className="mr-2 h-4 w-4" />
                 Google
             </Button>
-            <Button variant="outline" style={{backgroundColor: '#0077B5', color: 'white', borderColor: '#0077B5'}}
-             onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#005E94'}
-             onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0077B5'}
-            >
+            <Button variant="outline" className="bg-[#0077B5] text-white border-[#0077B5] hover:bg-[#005E94]">
                 <LinkedInIcon className="mr-2 h-4 w-4" />
                 LinkedIn
             </Button>
