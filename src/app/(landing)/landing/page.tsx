@@ -9,8 +9,19 @@ export default function LandingPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-20 md:py-32 lg:py-40 bg-gradient-to-br from-primary to-purple-600">
-          <div className="container mx-auto px-4 md:px-6 text-center">
+        <section className="relative w-full py-20 md:py-32 lg:py-40">
+           <div className="absolute inset-0">
+             <Image
+              src="https://picsum.photos/seed/business/1200/800"
+              alt="Background of professionals in a meeting"
+              fill
+              style={{ objectFit: 'cover' }}
+              className="opacity-20"
+              data-ai-hint="people meeting"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-purple-600 opacity-80" />
+          </div>
+          <div className="container relative mx-auto px-4 md:px-6 text-center">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4 text-primary-foreground">
                 Find Your Path, Together.
